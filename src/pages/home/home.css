@@ -1,0 +1,355 @@
+.index_hero{
+    width: 100%;
+    height:40rem; 
+    /* background-color: var(--c2); */
+    /* background-color: var(--c1); */
+    background: linear-gradient(45deg, black, var(--c1),var(--c1),  black); 
+    /* background-image: linear-gradient(to left ,var(--c1), var(--c4)); */
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* background-image: url('../../assets/images/Digital-presentation-amico.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    align-items: center; */
+}
+.hero_text{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(0,0,0,0.7); */
+    row-gap: 1rem;
+    padding: 2rem;
+}
+.hero_text h2{
+    /* width: 80%; */
+    text-align: center;
+    color: var(--c4);
+    font-family: var(--font1);
+    font-size: clamp(1.6rem, 5vw, 3.5rem);
+    text-shadow: .5rem .5rem 1rem rgb(106, 106, 106);
+}
+.core_services{
+    width: 100%;
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 0.1rem solid black; */
+    padding-bottom: 1rem;
+    /* position: relative; */
+    padding: 4rem 0;
+}
+
+.core_services_heading{
+    /* border: 0.1rem solid black; */
+    width: 100%;
+    /* background-color: var(--c1); */
+    padding: .5rem;
+    align-self: center;
+    text-align: center;
+}
+.core_services_heading h3{
+    font-family: var(--font1);
+    font-size: 2rem;
+    color: var(--c3);
+    margin: 2rem;
+    font-weight: 300;
+    text-decoration: underline;
+    
+}
+.core_services_heading h3 span{
+    color: var(--c2);
+    text-decoration: underline;
+}
+.core_services_detail{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 0.1rem solid black; */
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    position: relative;
+
+}
+.core_services_detail li i{
+    /* position: absolute; */
+    font-size: 7rem;
+    color:var(--c4);
+    /* margin-top: 5rem; */
+    display: block;
+    margin: 2rem ;
+}
+.core_services_detail li{
+    background-color: var(--c2);
+    width: 25rem;
+    height: 18rem;
+    /* border: 0.1rem solid black; */
+    text-align: center;
+    border-radius: .5rem;
+    color: var(--c1);
+    font-size: 1.5rem;
+    font-family: var(--font1);
+    font-weight: 600;
+    box-shadow: .25rem .25rem  1rem grey;
+    /* isolation: isolate; */
+    overflow: hidden;
+    cursor:pointer;
+    position: relative;
+
+}
+
+.core_services_detail li p{
+    padding: .5rem;
+}
+.core_services_detail li::before{
+    width: 24rem;
+    height: 17rem;
+    background-color: #e6a433;
+    /* background-color: rgba(0,0,0,0.7); */
+    content: '';
+    position: absolute;
+    font-size: 1.1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: 0.5s;
+    right: 100%;
+    align-items: center;
+    display: flex;
+    color: var(--c2);
+
+}
+.core_services_detail li:nth-child(1):before{
+    content: "Building websites and web applications, including custom solutions, responsive design, and back-end development, to improve online presence and user experience.";
+}.core_services_detail li:nth-child(2):before{
+    content: "Creating applications for mobile devices (iOS and Android) using native, cross-platform, or hybrid approaches to enhance user engagement and functionality.";
+}.core_services_detail li:nth-child(3):before{
+    content: "Incorporating artificial intelligence technologies into applications to enhance functionality through machine learning, natural language processing, and predictive analytics.";
+}.core_services_detail li:nth-child(4):before{
+    content: "Tailored software applications designed to meet specific business needs, ensuring scalability, integration with existing systems, and user-centric design.";
+}
+.core_services_detail li:hover::before{
+    right: 0%;
+
+}
+.core_services_btn{
+    width: 85%;
+    padding: 2rem;
+    /* position: absolute; */
+}
+
+.whyUs{
+    width: 100%;
+    /* height: auto; */
+    /* border:0.1rem solid black ; */
+    display: flex;
+    row-gap: 2rem;
+    column-gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 4rem 0;
+}
+.whyUs_image{
+    width: 30rem;
+    height: 30rem;
+    /* border:0.1rem solid black ; */
+    background-image: url('../../assets/images/freepik__background__42559.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0A5260;
+    /* background:linear-gradient(to left , #0a52605f, #fff); */
+    z-index: 1;
+    border-radius: .5rem;
+}
+.whyUs_content{
+    width: 45%;
+    height: 30rem;
+    /* border:0.1rem solid black ; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.whyUs_content h3{
+    /* border:0.1rem solid black ; */
+
+    display: block;font-family: var(--font1);
+    color: var(--c3);
+    font-size: clamp(1.6rem, 10vw, 3.5rem);
+}
+.whyUs_content p{
+    /* border:0.1rem solid black ; */
+    width: 85%;
+    display: block;font-family: var(--font1);
+    color: var(--c2);
+    font-weight: bold;
+
+}
+.whyus_card{
+    /* display: block; */
+    width: 45%;
+    height: 10rem;
+    /* border: 0.1rem solid black; */
+    align-items: center;
+    display: flex;
+    background-color: var(--c2);
+    text-align: center;
+    border-radius: .5rem;
+    /* padding: .5rem; */
+    padding: .5rem
+
+}
+.whyus_card:nth-child(even){
+    background-color: var(--c1);
+
+}
+.whyus_card p{
+    font-size: 1rem;
+    color: var(--c4);
+    text-align: center;
+    /* border: 0.1rem solid black; */
+    width: 100%;
+    font-weight: bold;
+}
+.whyus_card p span{
+    font-size: 1.8rem;
+    /* transform: rotate(1.2deg); */
+    color: var(--c1);
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.whyus_card:nth-child(even) p span{
+    color: var(--c2);
+}
+
+@media (max-width: 1055px) {
+    .whyUs_content,.whyUs_image{
+        width: 90%;
+    }
+    .whyUs_content{
+        height: auto;
+    }
+    .whyus_card{
+        width: 100%;
+    }
+
+}
+/* @media (max-width: 450px){
+    .whyus_card{
+        width: 100%;
+    }
+    .whyUs_content{
+        height: auto;
+    }
+
+} */
+
+.section{
+    width: 100%;
+    /* height: 20rem; */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+    border: none;
+    /* background-color: var(--c2); */
+    overflow: hidden;
+    padding: 4rem 0;
+}
+.section > p{
+    font-size: 2rem;
+    font-family: var(--font1);
+    color: var(--c2);
+
+}
+.wrapper{
+    /* border: 0.1rem solid black ; */
+    width: 95%;
+    margin-inline: auto;
+    position: relative;
+    height: 7rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 10%,
+        rgba(0,0,0,1) 90%,
+        rgba(0,0,0,0)
+    );
+
+}
+
+.itemLeft,
+.itemRight{
+    /* background-color: red; */
+    /* border:0.1rem solid var(--c1); */
+    width:200px ;
+    height: 7rem;
+    border-radius: .4rem;
+    position: absolute;
+    /* left: calc(200px * 8); */
+    animation-name: scroll-left;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc( 30s / 8 * (8 - var(--i)) * -1);
+    /* margin: .5rem; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: var(--c4);
+    background-color: var(--c2);
+    font-family: var(--font1);
+    font-size: 1.12rem;
+
+}
+
+.itemLeft:nth-child(odd),
+.itemRight:nth-child(odd){
+    background-color: var(--c1);
+}
+.itemLeft {
+    left: max(calc(200px * 8), 100%);
+    animation-name: scroll-left;
+
+}
+.itemRight {
+    right: max(calc(200px * 8), 100%);
+    /* right: max(calc(200px * 8), calc(100% + 200px)); */
+    animation-name: scroll-right;
+}
+
+@keyframes scroll-left {
+    to {
+        left: -200px;
+    }
+}
+@keyframes scroll-right {
+    to {
+        right: -200px;
+    }
+}
+.wrapper:hover .itemLeft,
+.wrapper:hover .itemRight{
+    animation-play-state:paused;
+    cursor: pointer;
+}
+.hero_btn{
+    display: flex;
+    gap: .5rem
+}

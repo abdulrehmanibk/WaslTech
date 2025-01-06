@@ -1,0 +1,128 @@
+  
+  .about-header h1 {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    margin: 0;
+  }
+  
+  .about-header p {
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    margin-top: 0.5rem;
+  }
+  
+  .exclusive-technology {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* border: 0.1rem solid black; */
+    padding: 4rem 0;
+
+  }
+  
+  .exclusive-content , .solutions-content{
+    width: 55rem;
+    /* border: 0.1rem solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    height: auto;
+    /* position: relative; */
+  }
+  
+  .exclusive-content h2, .solutions-content h2 {
+    font-size: clamp(2.1rem, 4vw, 4rem);
+    margin-bottom: 1rem;
+    color: var(--c2);
+  }
+  
+  .exclusive-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .exclusive-content li {
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    margin-bottom: 0.5rem;
+    list-style:square;
+  }
+  .exclusive-content li p, .solutions-content li p{
+    color: var(--c2);
+  }
+  
+  .learn-more {
+    background-color: var(--c3);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 15rem;
+    /* position: absolute;
+    bottom: 0; */
+  }
+  
+  .exclusive-images, .solutions-images{
+    width: 40rem;
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+  }
+  .exclusive-images{
+    background-color: var(--c2);
+    background-image: url('../../assets/images/rb_2148468477.png');
+  }
+
+  
+  .it-solutions {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    /* border: 0.1rem solid black; */
+    padding: 4rem 0;
+  }
+  
+  
+  .solutions-content ul {
+    list-style-type:circle;
+    padding: 0;
+  }
+  
+  .solutions-content li {
+    margin-bottom: 1rem;
+  }
+  
+  .solutions-content h3 {
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    margin-bottom: 0.5rem;
+    color: var(--c3);
+  }
+  
+  .solutions-content p {
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  }
+  
+  .solutions-images{
+    background-color: var(--c1);
+    background-image: url('../../assets/images/rb_18959.png');
+  }
+
+  @media (max-width: 1260px) {
+    .exclusive-content , .solutions-content, .exclusive-images, .solutions-images{
+      width: 90%;
+    }
+    .exclusive-images, .solutions-images{
+      height: ;
+    }
+  }
+  

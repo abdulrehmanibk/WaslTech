@@ -1,0 +1,120 @@
+
+*,html,body{
+    --c1: #E6A433;
+    --c2: #0A5260;
+    --c3: #E49D11;
+    --c4: #EFEFEF;
+    --font1: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+.btn1{
+    padding: .5rem 1rem;
+    color: var(--c2);
+    background-color: var(--c1);
+    border: none;
+    font-size: clamp(.8rem, 2.5vw, 1.5rem);
+    font-family: var(--font1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: 600;
+}
+.btn2{
+    padding: .5rem 1rem;
+    color: var(--c4);
+    background-color: var(--c2);
+    border: none;
+    font-size: clamp(.8rem, 2.5vw, 1.5rem);
+    font-family: var(--font1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: 600;
+}
+.btn1:hover{
+    background-color: var(--c4);
+    color:var(--c3);
+    border: 0.1rem solid var(--c1);
+}
+.btn2:hover{
+    background-color: var(--c4);
+    color:var(--c1);
+}
+
+
+.btn3{
+    width: 100%;
+    padding: 1rem;
+    color: var(--c4);
+    background-color: var(--c3);
+    border: none;
+    font-size: clamp(.8rem, 2.5vw, 1.5rem);
+    font-family: var(--font1);
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: 0.2s; */
+    font-weight: 600;
+}
+.btn3:hover{
+    background-color: transparent;
+    color:var(--c2);
+    border: 0.15rem solid var(--c1);
+}
+
+.banner{
+    width: 100%;
+    height: 20rem;
+    /* background:linear-gradient(145deg, var(--c2),var(--c2),var(--c2),var(--c2),#368fa3); */
+    background: linear-gradient(45deg, black, var(--c2),var(--c2),  black); 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.banner h2{
+    color: var(--c4);
+    font-family: var(--font1);
+    font-size: clamp(2rem, 4vw, 5rem);
+}
+.banner p{
+    color: var(--c4);
+    font-family: var(--font1);
+    font-size: 1rem;
+}.banner p a{
+   text-decoration: underline;
+   color: #368fa3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    font-family: var(--font1);
+  }
+
+/* Contact Section */
+.contact {
+    padding: 5rem 2rem;
+    background-color: var(--c4);
+    color: #fff;
+    text-align: center;
+    font-family: var(--font1);
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+      color: var(--c3);
+    margin-bottom: 1rem;
+  }
+  
+  .contact p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--c2);
+  
+  }
+    
