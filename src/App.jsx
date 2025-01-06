@@ -18,10 +18,10 @@ function App() {
     {/* <Home /> */}
     <Router>
       <Routes>
-        <Route path="/WaslTech" element={<Home />} />
-        <Route path="/WaslTech/contact" element={<Contact />} />
-        <Route path="WaslTech/services" element={<Services />} />
-        <Route path="/WaslTech/about" element={<About />} />
+        <Route path="/WaslTech" component={<Home />} />
+        <Route path="/WaslTech/contact" component={<Contact />} />
+        <Route path="WaslTech/services" component={<Services />} />
+        <Route path="/WaslTech/about" component={<About />} />
       </Routes>
     </Router>
     <Footer />
