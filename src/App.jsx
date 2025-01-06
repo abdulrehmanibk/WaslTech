@@ -18,8 +18,8 @@ function App() {
     {/* <Home /> */}
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/WaslTech" element={<Home />} />
+        <Route path="/WaslTech/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
       </Routes>
