@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link ,Switch } from 'react-router-dom';
 import Home from '../src/pages/home/home.jsx'
 
 import Navbar from '../src/components/navbar/navbar.jsx'
@@ -17,12 +17,12 @@ function App() {
     <Navbar />
     {/* <Home /> */}
     <Router>
-      <Routes>
+      <Switch>
         <Route path="/WaslTech" component={<Home />} />
         <Route path="/WaslTech/contact" component={<Contact />} />
         <Route path="WaslTech/services" component={<Services />} />
         <Route path="/WaslTech/about" component={<About />} />
-      </Routes>
+      </Switch>
     </Router>
     <Footer />
     </>
